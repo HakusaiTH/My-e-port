@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Phoovadet Sinsumang</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="hero">
+            <h1>Hi, I'm Phoovadet Sinsumang</h1>
+            <p>Like Anime | Game | Manga | Coding | Robot</p>
+            <a href="#projects" class="btn">See My project</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a passionate enthusiast of anime, games, manga, and robots. My fascination with technology and creativity has driven me to pursue further studies in computer science. I aspire to establish a tech startup that focuses on AIoT (Artificial Intelligence of Things) solutions for the agriculture industry, with the goal of making farming smarter and more efficient.</p>
+    </section>
+
+    <section id="projects">
+        <h2>My Reward Project</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="/img/sunshine.jpg" alt="Project 1">
+                <h3>Sunshine-Robot</h3>
+                <p>1st Runner-up Award, "Robotic Competitions for Students 2022" Project Competition, Robot Building Competition for Students 2022</p>
+                <a href="#" class="see-more" onclick="openModal('modal1')">See More</a>
+            </div>
+            <div class="project-card">
+                <img src="/img/doc.jpg" alt="Project 2">
+                <h3>Robot doctor providing services in a pharmacy</h3>
+                <p>Selected from 300 teams nationwide to attend the Advanced Robotics Development Course at the National Robotics Center, Taiwan (Al Robotics Hub at CTSP).</p>
+                <a href="#" class="see-more" onclick="openModal('modal2')">See More</a>
+            </div>
+            <div class="project-card">
+                <img src="/img/sanbot.jpg" alt="Project 3">
+                <h3>Sanbot Final Project</h3>
+                <p>completed to satisfaction AI Robotics Hub at CTSP Summer Robotics Program on November 3rd, 2023 with 40 hours of Educational Program.</p>
+                <a href="#" class="see-more" onclick="openModal('modal3')">See More</a>
+            </div>
+            <div class="project-card">
+                <img src="/img/kuka.jpg" alt="Project 4">
+                <h3>Smart Robotic Arm Application Competition</h3>
+                <p>Won the first prize in the "Smart Robotic Arm Application Competition by Venus Supply Co., Ltd. and KUKA"</p>
+                <a href="#" class="see-more" onclick="openModal('modal4')">See More</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>My GitHub Project</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="/img/v.jpg" alt="Project 5">
+                <h3>CiraCore-VanguardField</h3>
+                <p>Using Cira Core to detect card names and display them via Flask.</p>
+                <a href="https://github.com/HakusaiTH/CiraCore-VanguardField" class="see-more" target="_blank">See More</a>
+            </div>
+            <div class="project-card">
+                <img src="/img/car.png" alt="Project 6">
+                <h3>Blynk-car-control-form-xbox-joy</h3>
+                <p>Control a remote control car via Xbox Controller with blynk and esp8266</p>
+                <a href="https://github.com/HakusaiTH/Blynk-car-control-form-xbox-joy" class="see-more" target="_blank">See More</a>
+            </div>
+            <div class="project-card">
+                <img src="/img/gta.png" alt="Project 7">
+                <h3>GTA-San-Weight-body-tracking</h3>
+                <p>Body Tracking for playing the weightlifting minigame in GTA san</p>
+                <a href="https://github.com/HakusaiTH/GTA-San-Weight-body-tracking" class="see-more" target="_blank">See More</a>
+            </div>
+            <div class="project-card">
+                <img src="/img/joshu.jpg" alt="Project 8">
+                <h3>joshu</h3>
+                <p>Line chatbot that can control IoT devices using Dialogflow as a natural language processing tool. The chatbot can receive natural language commands from users, interpret them using Dialogflow, and control IoT devices.</p>
+                <a href="https://github.com/HakusaiTH/joshu" class="see-more" target="_blank">See More</a>
+            </div>
+            <div class="project-card">
+                <img src="/img/waifu.png" alt="Project 9">
+                <h3>PYwaifu</h3>
+                <p>tkinter for receiving user input connected to Charrater ai and voicevox</p>
+                <a href="https://github.com/HakusaiTH/PYwaifu-" class="see-more" target="_blank">See More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popup Modals -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <div class="modal-body">
+                <img src="/img/sunshine_c.jpg" alt="Project 1" class="modal-img">
+                <div class="modal-details">
+                    <h2><a href="https://github.com/HakusaiTH/Sunshine-Robot" target="_blank">TeamLead “SanBot Room service robot” (JavaScript, Python, C, JAVA)</a></h2>
+                    <p>“Sunshine Robot” Room service robots that use STT, ChatGPT, TTS, and facial and object recognition technology are ready to control IoT devices in the room and alert in case of fire.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <div class="modal-body">
+                <img src="/img/doc_c.jpg" alt="Project 2" class="modal-img">
+                <div class="modal-details">
+                    <h2><a href="https://github.com/HakusaiTH/168-education" target="_blank">TeamLead “Robot doctor providing services in a pharmacy” (JavaScript, Python, C)</a></h2>
+                    <p>The robot provides information services in the pharmacy. It takes voice commands from users, connects to ChatGpt's API, and converts text into voice. It can guide users to various points in the pharmacy.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <div class="modal-body">
+                <img src="/img/sanbot_c.jpg" alt="Project 3" class="modal-img">
+                <div class="modal-details">
+                    <h2><a href="https://github.com/HakusaiTH/roboticcamp-at-ctsp-final-project" target="_blank">TeamLead “Sanbot Final Project” (JavaScript, Python, MicroBit)</a></h2>
+                    <p>Final Project Control Sanbot NANO robot with Bluetooth via WebAppication using Flask and Microbit</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal4')">&times;</span>
+            <div class="modal-body">
+                <img src="/img/kuka_c.jpg" alt="Project 4" class="modal-img">
+                <div class="modal-details">
+                    <h2>TeamLead “Smart Robotic Arm Application Competition” (KUKA SIM)</h2>
+                    <p>Learn the basics of using KAKA SIM for controlling KUKA robotic arms.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-info">
+            <p>Email: oatkubzaza@gmail.com</p>
+            <p>GitHub: <a href="https://github.com/HakusaiTH" target="_blank">https://github.com/HakusaiTH</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="/static/scripts.js"></script>
+</body>
+</html>
